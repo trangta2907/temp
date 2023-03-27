@@ -50,7 +50,7 @@
   <!-- user display -->
   <div ng-if="!isAdmin" class="container responsive">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: #464343" >
       <!-- Container wrapper -->
       <div class="container">
         <!-- Toggle button -->
@@ -61,7 +61,7 @@
         </button>
 
         <!-- Collapsible wrapper -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="background-color: #464343">
           <!-- Navbar brand -->
           <a class="navbar-brand mt-2 mt-lg-0" href="#">
             <img src="images/img/logo.png" height="60" alt="Logo" loading="lazy" />
@@ -70,17 +70,17 @@
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <h5>NAM</h5>
+                <h5 style="color: white">NAM</h5>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <h5>NỮ</h5>
+                <h5 style="color: white">NỮ</h5>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
-                <h5>TRẺ EM</h5>
+                <h5 style="color: white">TRẺ EM</h5>
               </a>
             </li>
           </ul>
@@ -91,10 +91,10 @@
         <!-- Right elements -->
         <div class="d-flex align-items-center me-5">
           <a class="text-reset me-3" href="#cart">
-            <i class="bi bi-cart4"></i>
+            <i class="bi bi-cart4" style="color: white"></i>
           </a>
           <div class="dropdown">
-            <div class="btn btn-white" id="action" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="btn btn-white" id="action" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
               <i class="bi bi-person-circle"></i>
               {{user.fullname}}
             </div>
@@ -244,6 +244,7 @@
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
+                style="color: white"
               >
                 <i class="bi bi-person-fill" style="color: white"></i>
                 {{user.fullname}}
@@ -284,11 +285,11 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#orderManagement" >
-                  <span class="me-2"><i class="bi bi-table"></i></span>
+                  <span class="me-2"><i class="bi bi-table" style="color: white"></i></span>
                   <span style="color: white">Đơn hàng</span>
                   <span class="ms-auto">
                       <span class="right-icon">
-                      <i class="bi bi-chevron-down"></i>
+                      <i class="bi bi-chevron-down" style="color: white"></i>
                       </span>
                   </span>
                   </a>
@@ -298,63 +299,63 @@
                   <li>
                     <a href="#order/create-order" class="nav-link px-3">
                       <span class="me-2" >
-                        <i class="bi bi-file-earmark-plus"></i>
+                        <i class="bi bi-file-earmark-plus" style="color: white"></i>
                       </span>
                       <span style="color: white">Tạo mới đơn hàng</span>
                     </a>
                   </li>
                   <li>
                     <a href="#wait-for-confirmation" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar3-week"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar3-week" style="color: white"></i></span>
                       <span style="color: white">Đơn chờ xác nhận</span>
                     </a>
                   </li>
                   <li>
                     <a href="#CONFIRMED" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar3-week"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar3-week" style="color: white"></i></span>
                       <span style="color: white">Đơn đang xử lý</span>
                     </a>
                   </li>
                   <li>
                     <a href="#WAIT_FOR_THE_SHIPPER_TO_PICK_UP" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar3-week"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar3-week" style="color: white"></i></span>
                       <span style="color: white">Đơn chờ bên vận chuyển lấy hàng</span>
                     </a>
                   </li>
                   <li>
                     <a href="#DELIVERING" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-truck"></i></span>
+                      <span class="me-2"><i class="bi bi-truck" style="color: white"></i></span>
                       <span style="color: white">Đơn đang giao</span>
                     </a>
                   </li>
                   <li>
                     <a href="#DELIVERED" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar-check"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar-check" style="color: white"></i></span>
                       <span style="color: white">Đơn đã giao</span>
                     </a>
                   </li>
                   <li>
                     <a href="#NO_DELIVERY" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar-x"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar-x" style="color: white"></i></span>
                       <span style="color: white">Đơn không giao được</span>
                     </a>
                   </li>
                   <li>
                     <a href="#CANCELLED" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-calendar-x"></i></span>
+                      <span class="me-2"><i class="bi bi-calendar-x" style="color: white"></i></span>
                       <span style="color: white">Đơn bị hủy phía cửa hàng & phía khách hàng</span>
                     </a>
                   </li>
                   <li>
                     <a href="#return-order" class="nav-link px-3">
-                      <span class="me-2"><i class="bi bi-arrow-left-right"></i></span>
+                      <span class="me-2"><i class="bi bi-arrow-left-right" style="color: white"></i></span>
                       <span style="color: white">Đổi - trả hàng</span>
                     </a>
                   </li>
                   <li>
                     <a href="#order-management" class="nav-link px-3">
                       <span class="me-2"
-                        ><i class="bi bi-speedometer2"></i
+                        ><i class="bi bi-speedometer2" style="color: white"></i
                       ></span>
                       <span style="color: white">Tất cả đơn hàng</span>
                     </a>
@@ -365,11 +366,11 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#product" >
-                  <span class="me-2"><i class="bi bi-layout-split"></i></span>
+                  <span class="me-2"><i class="bi bi-layout-split" style="color: white"></i></span>
                   <span style="color: white">Sản phẩm</span>
                   <span class="ms-auto">
                       <span class="right-icon">
-                      <i class="bi bi-chevron-down"></i>
+                      <i class="bi bi-chevron-down" style="color: white"></i>
                       </span>
                   </span>
                   </a>
@@ -402,11 +403,11 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#promotion" >
-                  <span class="me-2"><i class="bi bi-journal-plus"></i></span>
+                  <span class="me-2"><i class="bi bi-journal-plus" style="color: white"></i></span>
                   <span style="color: white">Khuyến mãi</span>
                   <span class="ms-auto">
                       <span class="right-icon">
-                      <i class="bi bi-chevron-down"></i>
+                      <i class="bi bi-chevron-down" style="color: white"></i>
                       </span>
                   </span>
                   </a>
@@ -434,11 +435,11 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" data-bs-toggle="collapse" href="#account" >
-                  <span class="me-2"><i class="bi bi-people"></i></span>
+                  <span class="me-2"><i class="bi bi-people" style="color: white"></i></span>
                   <span style="color: white">Tài khoản</span>
                   <span class="ms-auto">
                       <span class="right-icon">
-                      <i class="bi bi-chevron-down"></i>
+                      <i class="bi bi-chevron-down" style="color: white"></i>
                       </span>
                   </span>
                   </a>
@@ -467,14 +468,14 @@
             
             <li class="my-4"><hr class="dropdown-divider bg-dark" /></li>
             <li>
-              <div class="text-muted small fw-bold text-uppercase px-3 mb-3">
+              <div class="text-muted small fw-bold text-uppercase px-3 mb-3" style="color: white">
                 Thống kê
               </div>
             </li>
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" href="#">
-                  <span class="me-2"><i class="bi bi-chat-left-dots"></i></i></span>
+                  <span class="me-2"><i class="bi bi-chat-left-dots" style="color: white"></i></i></span>
                   <span style="color: white">Đánh giá sản phẩm</span>
                   </a>
               </b>
@@ -482,7 +483,7 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" href="#admin-sales-report">
-                  <span class="me-2"><i class="bi bi-bar-chart"></i></span>
+                  <span class="me-2"><i class="bi bi-bar-chart" style="color: white"></i></span>
                   <span style="color: white">Doanh số bán hàng</span>
                   </a>
               </b>
@@ -490,7 +491,7 @@
             <li>
               <b>
                   <a class="nav-link px-3 sidebar-link" href="#doanhThu">
-                  <span class="me-2"><i class="bi bi-graph-up"></i></span>
+                  <span class="me-2"><i class="bi bi-graph-up" style="color: white"></i></span>
                   <span style="color: white">Doanh thu</span>
                   </a>
               </b>
